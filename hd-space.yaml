@@ -1,8 +1,11 @@
-
--name: Create a file in the home directory if it doesn't exist
-  hosts: reduncen
-  tasks:
-  	- name: Create a file in the home directory
-      shell: echo "Hey guys!" > $HOME/hello.txt
-      args:
-      	creates: "$HOME/hello.txt"
+-name: Shell module example
+ hsots: reduncen
+ tasks:
+  
+  -name: Check system information
+   shell:
+     "lsb_release -a"
+   register: os_info
+    
+  -debug:
+     msg: "{{os_info.stdout_lines}}"
