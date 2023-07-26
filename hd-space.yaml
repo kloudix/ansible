@@ -1,6 +1,7 @@
 ---
 - name: Check Disk Space Usage
   hosts: tphredun
+  ansible_port: 2007
   tasks:
           - name: Disk usage from command module
             command: df -h
