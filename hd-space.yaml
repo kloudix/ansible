@@ -1,5 +1,5 @@
 -name: Shell module example
- hsots: reduncen
+ hosts: reduncen
  tasks:
   
   -name: Check system information
