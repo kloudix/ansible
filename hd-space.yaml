@@ -1,5 +1,5 @@
 
-- name: Create a file in the home directory if it doesn't exist
+-name: Create a file in the home directory if it doesn't exist
   hosts: reduncen
   tasks:
   	- name: Create a file in the home directory
