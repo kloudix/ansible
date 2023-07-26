@@ -1,6 +1,6 @@
 ---
 - name: Check Disk Space Usage
-  hosts: dev
+  hosts: tphredun
   tasks:
           - name: Disk usage from command module
             command: df -h
