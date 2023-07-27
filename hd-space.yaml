@@ -1,9 +1,9 @@
 - name: Shell module example
   hosts: reduncen
+   - name: Change ssh port to 2009
+   set_fact:
+     ansible_port: 2009
   tasks:
-  - name: Change ssh port to 2009
-  set_fact:
-    ansible_port: 2009
   - name: Check system information
     shell:
       "lsb_release -a"
